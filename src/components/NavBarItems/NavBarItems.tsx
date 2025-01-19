@@ -1,22 +1,25 @@
 const navBarItems = {
     Home: {
-        label: "Watches",
+        label: "modWatches",
         link: "/home"
     },
-    Cart: {
-        link: "/cart"
+    Instagram: {
+        link: ""
+    },
+    Facebook:{
+        link: "https://www.facebook.com/profile.php?id=61568144398475"
     },
     Buttons: [
         {
-            label: "Products",
+            label: "Produktai",
             link: "/products"
         },
         {
-            label: "About Us",
+            label: "Apie mus",
             link: "/about-us"
         },
         {
-            label: "Contacts",
+            label: "Kontaktai",
             link: "/contacts"
         }
     ]

@@ -15,7 +15,8 @@ import ShoppingBag  from '@mui/icons-material/ShoppingBagOutlined';
 import navBarItems from './NavBarItems/NavBarItems';
 import { Drawer } from '@mui/material';
 import { Link } from 'react-router-dom';
-import LanguageIcon from '@mui/icons-material/Language';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import FacebookIcon from '@mui/icons-material/Facebook';
 
 interface Props {
   /**
@@ -86,10 +87,10 @@ const NavBar = (props: Props) => {
           size="large"
           sx={{mr: 1}}
           >
-            <Link to={navBarItems.Cart.link} 
+            <Link to={navBarItems.Facebook.link} 
             style={{textDecoration:"none", color:"inherit"}}>
-              <ShoppingBag>
-              </ShoppingBag>
+              <FacebookIcon>
+              </FacebookIcon>
             </Link>
           </IconButton>
           <IconButton
@@ -97,8 +98,11 @@ const NavBar = (props: Props) => {
           size="large"
           sx={{mr: 1}}
           >
-            <LanguageIcon>
-            </LanguageIcon>
+            <Link to={navBarItems.Instagram.link} 
+            style={{textDecoration:"none", color:"inherit"}}>
+              <InstagramIcon>
+              </InstagramIcon>
+            </Link>
           </IconButton>
           <Button color="inherit">Login</Button>
         </Toolbar>
